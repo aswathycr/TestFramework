@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232142091E2D20A100F4E517 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232142081E2D20A100F4E517 /* Testing.swift */; };
 		23F0B4391E2BE8FA00B233EE /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F0B42F1E2BE8FA00B233EE /* TestFramework.framework */; };
 		23F0B43E1E2BE8FA00B233EE /* TestFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0B43D1E2BE8FA00B233EE /* TestFrameworkTests.swift */; };
 		23F0B4401E2BE8FA00B233EE /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F0B4321E2BE8FA00B233EE /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		232142081E2D20A100F4E517 /* Testing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
 		23F0B42F1E2BE8FA00B233EE /* TestFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F0B4321E2BE8FA00B233EE /* TestFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFramework.h; sourceTree = "<group>"; };
 		23F0B4331E2BE8FA00B233EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				23F0B4321E2BE8FA00B233EE /* TestFramework.h */,
 				23F0B4331E2BE8FA00B233EE /* Info.plist */,
+				232142081E2D20A100F4E517 /* Testing.swift */,
 			);
 			path = TestFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					23F0B42E1E2BE8FA00B233EE = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					23F0B4371E2BE8FA00B233EE = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232142091E2D20A100F4E517 /* Testing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		23F0B4441E2BE8FA00B233EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cabot.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		23F0B4451E2BE8FA00B233EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		23F0B4471E2BE8FA00B233EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cabot.TestFrameworkTests;
@@ -367,6 +376,7 @@
 		23F0B4481E2BE8FA00B233EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cabot.TestFrameworkTests;
@@ -394,6 +404,7 @@
 				23F0B4451E2BE8FA00B233EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23F0B4461E2BE8FA00B233EE /* Build configuration list for PBXNativeTarget "TestFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +413,7 @@
 				23F0B4481E2BE8FA00B233EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
